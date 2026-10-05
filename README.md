@@ -2,7 +2,7 @@
 
 Side-by-side sketches of how tmt loads, checks, stores, and documents metadata. Each example starts from a real slice of [teemtee/tmt](https://github.com/teemtee/tmt) and shows that behavior with the current approach, with attrs, and with pydantic v2.
 
-This repository does not import tmt. The samples are trimmed so the difference between the libraries is visible. Behavior is summarized from tmt (MIT). The comparison code was written with the assistance of Grok 4.7.
+This repository does not import tmt. The samples are trimmed so the difference between the libraries is visible. Behavior is summarized from tmt (MIT).
 
 ## Run
 

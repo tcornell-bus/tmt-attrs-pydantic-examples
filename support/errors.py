@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """Error types trimmed from tmt.utils."""
 
 from __future__ import annotations

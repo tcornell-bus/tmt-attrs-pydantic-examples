@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """Current tmt behavior, trimmed.
 
 Sources:
@@ -41,12 +40,15 @@ class StepData:
 
     @classmethod
     def from_spec(cls, raw: dict[str, Any]) -> StepData:
-        """pre_normalization, construct, normalize keys, post_normalization."""
+        """pre_normalization, construct, normalize keys, post_normalization.
+
+        _load_keys normalizes every key on every call, missing or not,
+        using the field default as the raw value when a key is absent.
+        """
 
         print("  pre_normalization")
         data = cls(name=raw["name"], how=raw["how"])
         print("  normalize when")
-        if "when" in raw:
-            data.when = normalize_string_list("when", raw.get("when"))
+        data.when = normalize_string_list("when", raw.get("when", data.when))
         print("  post_normalization")
         return data

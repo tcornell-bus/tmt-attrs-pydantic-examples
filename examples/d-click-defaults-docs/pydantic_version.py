@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """pydantic v2 version of example D.
 
 Field.json_schema_extra is copied into JSON Schema, so a FieldMeta object

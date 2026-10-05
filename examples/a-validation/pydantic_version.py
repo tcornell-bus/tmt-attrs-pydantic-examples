@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """pydantic v2 version of example A.
 
 model_validate rejects unknown keys and a non-string duration, and the

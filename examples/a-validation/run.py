@@ -1,5 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
-# The attrs wrapped-failures section was created with the assistance of Claude Sonnet 5.
 """Run the validation comparison."""
 
 from __future__ import annotations

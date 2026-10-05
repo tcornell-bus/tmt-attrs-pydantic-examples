@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """attrs version of example B.
 
 attrs.field(converter=...) is the normalization hook. The converter receives

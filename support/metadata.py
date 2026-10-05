@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """Shared CLI and documentation metadata.
 
 Neither attrs nor pydantic builds Click options or the tmt documentation pages.

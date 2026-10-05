@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """attrs version of example D.
 
 FieldMeta lives in attrs field metadata, the same slot tmt uses on

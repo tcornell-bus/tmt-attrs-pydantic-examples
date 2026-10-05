@@ -1,5 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
-# The from_fmf wrapper was created with the assistance of Claude Sonnet 5.
 """attrs + cattrs version of example A.
 
 cattrs can forbid unknown keys and reject a non-string duration. It does not

@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """Shared field metadata and fmf input for the Click example.
 
 The text matches PrepareInstallData in tmt/steps/prepare/install.py.

@@ -20,4 +20,4 @@ Precedence, from `Step._patch_raw_datum`: only `COMMANDLINE` and `ENVIRONMENT` s
 
 `check-first: false` in fmf survives an invocation that does not pass the flag. `--package extra-rpm` replaces the fmf package list. `INSTALL_PACKAGE` does too, because Click reports `ENVIRONMENT`.
 
-Written with the assistance of Grok 4.7. Behavior summarized from teemtee/tmt (MIT).
+Behavior summarized from teemtee/tmt (MIT).

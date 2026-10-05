@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """Current tmt behavior, trimmed.
 
 Sources:
@@ -56,19 +55,10 @@ class PrepareInstallData:
         )
 
 
-def mutable_default_without_copy() -> list[str]:
-    """What _load_keys avoids: two objects alias one list."""
+def two_instances() -> tuple[list[str], list[str]]:
+    """field(default_factory=list) gives each instance its own list."""
 
-    shared: list[str] = []
-    first = shared
-    second = shared
-    first.append("only-a")
-    return second
-
-
-def mutable_default_with_copy() -> list[str]:
-    shared: list[str] = []
-    first = copy.copy(shared)
-    second = copy.copy(shared)
-    first.append("only-a")
-    return second
+    first = PrepareInstallData()
+    second = PrepareInstallData()
+    first.package.append("only-a")
+    return first.package, second.package

@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """Current tmt behavior, trimmed.
 
 Sources:

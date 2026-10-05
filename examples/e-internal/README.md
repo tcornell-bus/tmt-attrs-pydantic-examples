@@ -11,4 +11,4 @@ Sources in tmt:
 
 pydantic `Field(exclude=True)` covers the spec dump. The run-state dump reads `serial_number` off the instance, because that flag is not a mode. attrs keeps `FieldMeta(internal=True)` in field metadata and branches in `export`. A field named `_applied` is still stored under that name, but attrs 26 generates `__init__(..., applied=...)`, stripping one leading underscore. The example assigns `_applied` after construction.
 
-Written with the assistance of Grok 4.7. Behavior summarized from teemtee/tmt (MIT).
+Behavior summarized from teemtee/tmt (MIT).

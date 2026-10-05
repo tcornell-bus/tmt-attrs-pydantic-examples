@@ -14,4 +14,4 @@ Several `Check` subclasses implement `to_minimal_spec` by calling `to_spec`. Thi
 
 attrs uses two `cattrs` converters. pydantic uses one `model_serializer` and `model_dump(context={"mode": ...})`.
 
-Written with the assistance of Grok 4.7. Behavior summarized from teemtee/tmt (MIT).
+Behavior summarized from teemtee/tmt (MIT).

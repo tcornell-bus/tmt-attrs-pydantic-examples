@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """pydantic v2 version of example E.
 
 Field(exclude=True) drops serial_number from model_dump, which covers spec

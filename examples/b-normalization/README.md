@@ -12,4 +12,4 @@ The schema `oneOf` allows both shapes. The normalizer is what stores one interna
 
 The attrs converter and the pydantic validator both call the same `normalize_string_list`. The library does not know that a bare string means a one-item list. The key address (`when`, or `when[0]`) is closed over, because neither hook is given the fmf path.
 
-Written with the assistance of Grok 4.7. Behavior summarized from teemtee/tmt (MIT).
+Behavior summarized from teemtee/tmt (MIT).

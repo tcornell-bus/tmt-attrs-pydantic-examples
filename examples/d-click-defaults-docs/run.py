@@ -1,4 +1,3 @@
-# Some of the following content was wholly created with the assistance of Grok 4.7.
 """Run the Click, defaults, and documentation comparison."""
 
 from __future__ import annotations
@@ -53,8 +52,7 @@ def main() -> None:
         original.PrepareInstallData.field_rows(),
         original.PrepareInstallData.from_spec,
     )
-    print(f"shared list without copy: {original.mutable_default_without_copy()}")
-    print(f"second instance after copy: {original.mutable_default_with_copy()}")
+    print(f"default_factory instances: {original.two_instances()}")
 
     show_precedence(
         "attrs: attrs field metadata",
