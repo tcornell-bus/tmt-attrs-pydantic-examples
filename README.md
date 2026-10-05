@@ -20,12 +20,16 @@ Letters: `a` validation, `b` normalization, `c` serialization, `d` Click and doc
 Example A:  
 - Validation of defined keys and value format, preferably from the annotation.
 - Human-friendly errors for invalid fmf. Pydantic's `ValidationError` already has the `extra_forbidden` and `string_type` text. `MetadataContainer.from_fmf` replaces it with `Invalid metadata in '...'`.
-- Schema generation, including `require+` and `extra-*`. Generated schema does not describe fmf merge operators. `extra-*` needs a pre-pass or `patternProperties`, which a model schema does not emit.  
+- Schema generation, including `require+` and `extra-*`. Generated schema does not describe fmf merge operators. `extra-*` needs a pre-pass or `patternProperties`, which a model schema does not emit. 
+
+ 
 Example B:  
 - Normalization: a string or a list becomes a list.
 - `from_spec`: read the specification, then normalize and validate.
+
 Example C:  
 - De/serialization, export, and more than one dump of the same value. `tests.yaml` uses the export shape plus internal fields. Run state uses the full serialize shape plus `__class__`.  
+
 Example D:  
 - Click options, and command-line input overriding fmf without applying Click defaults. Neither library builds Click options.
 - Default values, including a fresh list per instance.
