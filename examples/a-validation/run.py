@@ -41,6 +41,7 @@ def main() -> None:
     section("attrs: same failures wrapped the way from_fmf wraps them today")
     attempt("unknown key libvirt", lambda: attrs_version.from_fmf(TREE_NAME, UNKNOWN_KEY))
     attempt("duration 77", lambda: attrs_version.from_fmf(TREE_NAME, BAD_DURATION))
+    attempt("require+", lambda: attrs_version.from_fmf(TREE_NAME, PLUS_KEY))
 
     section("pydantic: native ValidationError")
     attempt("good", lambda: pydantic_version.TestDocument.load(GOOD))
@@ -50,6 +51,7 @@ def main() -> None:
     section("pydantic: same failures wrapped the way from_fmf wraps them today")
     attempt("unknown key libvirt", lambda: pydantic_version.TestDocument.from_fmf(TREE_NAME, UNKNOWN_KEY))
     attempt("duration 77", lambda: pydantic_version.TestDocument.from_fmf(TREE_NAME, BAD_DURATION))
+    attempt("require+", lambda: pydantic_version.TestDocument.from_fmf(TREE_NAME, PLUS_KEY))
     print("model_json_schema() has no patternProperties and no require+:")
     _show_schema(pydantic_version.schema())
 
