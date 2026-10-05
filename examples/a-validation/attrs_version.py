@@ -40,7 +40,7 @@ def _strict_str(value: object, _type: type[str]) -> str:
     """cattrs would otherwise call str(77) and accept an integer duration."""
 
     if not isinstance(value, str):
-        raise TypeError(f"expected str, got {type(value).__name__}")
+        raise TypeError(f"expected str, got {type(value).__name__}: {value!r}")
     return value
 
 
